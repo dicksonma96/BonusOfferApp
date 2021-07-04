@@ -28,7 +28,7 @@ function Bonus(props) {
   }
 
   return (
-    <div className="bonus_item col shadow">
+    <div className="bonus_item col">
 
       <div className="bonus_top col">
         <img className="bonus_logo" src={props.info.img} alt="bonus_logo"/>
