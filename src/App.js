@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import './css/style.min.css';
+import React from "react";
+import {
+  BrowserRouter as Router,  Switch,  Route} from "react-router-dom";
+import Header from './Component/Header';
+import Home from './Pages/Home';
+import OnlineCasino from './Pages/OnlineCasino';
+import FreeSpin from './Pages/FreeSpin';
+import CasinoBonus from './Pages/CasinoBonus';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="container">
+        <Header />
+        <Switch>
+          <Route path="/" exact component={Home}/>
+          <Route path="/online-casinos" component={OnlineCasino}/>
+          <Route path="/free-spins" component={FreeSpin}/>
+          <Route path="/casino-bonus" component={CasinoBonus}/>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
