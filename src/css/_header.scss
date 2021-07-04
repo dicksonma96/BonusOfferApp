@@ -1,0 +1,59 @@
+.header{
+  z-index: 2;
+
+  .header_top{
+    background: $color2;
+    padding:20px 0;
+
+    .logo{
+      width:100px;
+    }
+
+    .menu_btn{
+      width:30px;
+      margin-right: 30px;
+      cursor:pointer;
+    }
+
+    .dropdown{
+      padding-top: 20px;
+
+      .menu_item{
+        width:100%;
+        color:white;
+        font-size: 15px;
+        padding:20px 0;
+        border-top:$color4 solid 1px;
+        cursor:pointer;
+
+        b{
+          margin-right: 15px;
+          color:$color6;
+          transition: 0.3s;
+        }
+
+        &:hover{
+          font-style: italic;
+
+          b{
+            margin-right: 20px;
+          }
+        }
+      }
+
+    }
+  }
+
+  .breadcrumb{
+    padding:10px 0;
+    color:grey;
+    background: white;
+    font-size: 12px;
+    font-style: italic;
+    text-transform: capitalize;
+
+    b{
+      margin:0 10px;
+    }
+  }
+}

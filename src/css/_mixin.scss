@@ -1,0 +1,17 @@
+@mixin flex($direction, $align, $jus) {
+  display:flex;
+  flex-direction: $direction;
+  align-items:$align;
+  justify-content: $jus;
+}
+
+
+@mixin gradientBg{
+  background: linear-gradient($color1,$color2);
+}
+
+@mixin gradientText{
+    background: linear-gradient($color1,$color2);
+  -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
